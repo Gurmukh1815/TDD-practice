@@ -54,3 +54,140 @@ describe('merge', function() {
         assert.deepEqual(functions.merge(arr1, arr2), ['a','c', 'b', 'd']);
     });
 
+    it('returns 4 when multiply 2 and 2', function(){
+        assert.equal(functions.sum(2, 2), 4);
+    });
+    
+    it('returns 0 when multiply 0 and 2', function(){
+        assert.equal(functions.sum(0, 2), 2);
+    });
+    
+    it('returns -4 when multiply -2 and 2', function(){
+        assert.equal(functions.sum(-2,-2), -4);
+    });
+
+    describe('min', function() {
+    it('returns -2 when provided array is [-2, -1]', function(){
+        assert.equal(functions.min(-2,-1), -2);
+    });
+    });
+
+    describe('min', function() {
+        it('returns 1 when provided array is [1,2]', function(){
+            assert.equal(functions.min(1,2), 1);
+        });
+    });
+
+    describe('min', function() {
+        it('returns 0 when provided array is [1,0]', function(){
+            assert.equal(functions.min(1,0), 0);
+        });
+    });
+
+    describe('max', function() {
+        it('returns 4 when provided array is [2,4]', function(){
+            assert.equal(functions.max(2,4), 4);
+        });
+    });
+
+    describe('max', function() {
+        it('returns -1 when provided array is [-1,-4]', function(){
+            assert.equal(functions.max(-1,-4), -1);
+        });
+    });
+
+    describe('max', function() {
+        it('returns 2 when provided array is [2,2]', function(){
+            assert.equal(functions.max(2,2), 2);
+        });
+    });
+
+    describe('head', function(){
+        it('should return null when the provided array is empty []', function(){
+            let arr = [];
+            assert.isNull(functions.tail(arr));
+        });
+    });
+    
+    describe('head', function(){
+        it('should return null when the provided array is empty []', function(){
+            let arr = [];
+            assert.isNull(functions.tail(arr));
+        });
+    });
+    
+    it('should return hello when the provided array is empty [hello]', function(){
+        let arr = ['hello'];
+        assert.equal(functions.tail(arr), 'hello');
+    });
+
+    describe('mid', function(){
+        it('should return null when the provided array is empty []', function(){
+            let arr = [];
+            assert.isNull(functions.mid(arr));
+        });
+    });
+
+    describe('smallest', function(){
+        it('should return 1 when the provided array is [2,5,1]', function(){
+            let arr = [2,5,1];
+            assert.equal(functions.smallest(arr), 1 );
+        });
+    });
+
+    it('should return -2 when the provided array is [-1,-2,0,5,10]', function(){
+        let arr = [-1,-2,0,,5,10];
+        assert.equal(functions.smallest(arr), -2);
+    });
+
+    it('should return null when the provided array is empty []', function(){
+        let arr = [];
+        assert.equal(functions.smallest(arr));
+    });
+
+    describe('largest', function(){
+        it('should return 5 when the provided array is [1,2,3,,4,5]', function(){
+            let arr = [1,2,3,4,5];
+            assert.equal(functions.largest(arr), 5 );
+        });
+    });
+    describe('largest', function(){
+    it('should return 10 when the provided array is [0,-1,-2,5,10]', function(){
+        let arr = [0,-1,-2,5,10];
+        assert.equal(functions.largest(arr), 10);
+    });
+    });
+
+    describe('largest', function(){
+        it('should return 10 when the provided array is [0,-1,-2,5,10]', function(){
+            let arr = [0,-1,-2,5,10];
+            assert.equal(functions.largest(arr), 10);
+        });
+        });
+    
+        describe('largest', function(){
+            it('should return null when the provided array is empty []', function(){
+                let arr = [];
+                assert.isNull(functions.largest(arr));
+            });
+            });
+    
+
+            describe('total', function(){
+                it('should return 12 when the provided array is [2,4,6]', function(){
+                    let arr = [2,4,6];
+                    assert.equal(functions.total(arr), 12);
+                });
+                });
+
+                
+                describe('total', function(){
+                    it('should return 1 when the provided array is [1]', function(){
+                        let arr = [1];
+                        assert.equal(functions.total(arr), 1);
+                    });
+                    });
+    
+
+                    
+                
